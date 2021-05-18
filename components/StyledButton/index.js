@@ -8,7 +8,7 @@ const StyledButton = (props) => {
     //const content = props.content;
     //const onPress = props.onPress;
 
-    const {type, content, onPress} = props;
+    const { type, content, onPress } = props;
     
     const backgroundColor = type === 'primary' ? '#171A20CC' : '#FFFFFFA6';
     const color = type === 'primary' ? '#FFFFFF': '#171A20';
