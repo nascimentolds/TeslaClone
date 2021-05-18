@@ -1,12 +1,11 @@
 import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
 import StyledButton from '../StyledButton';
-import StyledButoon from '../StyledButton'
 import styles from './styles'
 
 const CarItem = (props) => {
 
-  const { name, tagLine, tagLineCTA, image } = props;
+  const { name, tagline, taglineCTA, image } = props.car;
 
     return (
         <View style={styles.carContainer}>
@@ -18,9 +17,9 @@ const CarItem = (props) => {
 
         <View style={styles.titles}>
           <Text style={styles.title}>{name}</Text>
-          <Text style={styles.subtitle}>{tagLine}
+          <Text style={styles.subtitle}>{tagline}
             {' '}
-            <Text style={styles.tagLineCTA}>{tagLineCTA}</Text>
+            <Text style={styles.tagLineCTA}>{taglineCTA}</Text>
           </Text>
         </View>
 
